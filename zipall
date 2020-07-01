@@ -1,0 +1,3 @@
+#zip -x '*.git*' '*.idea*' '*.DS_Store*' '*README.md*' '*.iml*' .gitignore -r ../uah-temp-all.zip ../$(basename $PWD)
+zip -x '*.git*' '*.idea*' '*.DS_Store*' '*README.md*' '*.iml*' .gitignore -r ../uah-temp-all.zip ../uah-temp-all
+

@@ -1,0 +1,7 @@
+# Directories to ignore #
+.idea
+js/lib/*.js
+
+# Files to ignore #
+*.iml
+*.tar

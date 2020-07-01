@@ -1,0 +1,15 @@
+echo "Save files to deploy in uah-temp-all.tar."
+# Start from parent directory to include the uah-temp-all directory in the tarball
+cd ..
+# First file is cvf, all others are rvf
+tar cvf uah-temp-all/uah-temp-all.tar uah-temp-all/uah-temp-all.html
+
+tar rvf uah-temp-all/uah-temp-all.tar uah-temp-all/js/uah-temp-all.js
+
+# Don't include the large plotly javascript file. There will be one on the server.
+# tar rvf uah-temp-all/uah-temp-all.tar uah-temp-all/js/lib/plotly-latest.min.js
+
+tar rvf uah-temp-all/uah-temp-all.tar uah-temp-all/data/uah-monthly-all.csv
+
+# Return to the project directory
+cd uah-temp-all

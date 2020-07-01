@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/uah-temp-all.css">
+    <!--<script src="js/lib/plotly-latest.min.js"></script>-->
+</head>
+
+<body>
+<!-- Plots go in blank <div> elements.
+    You can size them in the plot layout,
+    or give the div a size as shown here.
+-->
+<h3>UAH Global Satellite Temperature Time Series</h3>
+<p>
+    Satellite <a href="https://www.nsstc.uah.edu/data/msu/v6.0/tlt/uahncdc_lt_6.0.txt">data file</a> from <a href="https://www.nsstc.uah.edu/climate/">Global Temperature Report</a> of the University of Alabama Huntsville is updated monthly.
+</p>
+<div id="uah-temp-time-series" style="width: 90%; height:500px;"></div>
+<div style="text-align: center">
+    <a href="data/uah-monthly-all.csv">Download Data</a>
+</div>
+
+<script src="js/uah-temp-all.js"></script>
+
+<p>You can link to this page with query parameters separated by "&amp;" to show or hide specific plot lines.</p>
+<p>For example, to hide the (<i>default</i>) <strong>G</strong>lobal <strong>A</strong>verage (<strong>ga</strong>) plot and show the <strong>T</strong>ropics <strong>A</strong>ll (<strong>ta</strong>) and <strong>N</strong>orthern Hemisphere <strong>A</strong>ll (<strong>na</strong>) plots:</p>
+<p><strong>http://localhost:8000/practice-1.html?ga=0&amp;ta&amp;na</strong></p>
+<p>or</p>
+<p><strong>http://localhost:8000/practice-1.html?ga=0&amp;ta=1&amp;na=1</strong></p>
+<table style="width: 532px; height: 394px;">
+    <tbody>
+    <tr>
+        <td style="width: 120px;"><strong>Parameter</strong></td>
+        <td style="width: 300px;"><strong>Description</strong></td>
+        <td style="width: 90px;"><strong>Latitude</strong></td>
+    </tr>
+    <tr>
+        <td style="width: 120px;">ga, gl, go</td>
+        <td style="width: 300px;">Global All, Land, Oceans</td>
+        <td style="width: 90px;">90&deg;N &ndash; 90&deg;S</td>
+    </tr>
+    <tr>
+        <td style="width: 120px;">na, nl, no</td>
+        <td style="width: 300px;">Northern Hemisphere&nbsp; All, Land, Oceans</td>
+        <td style="width: 90px;">0&deg; &ndash; 90N&deg;</td>
+    </tr>
+    <tr>
+        <td style="width: 120px;">sa, sl, so</td>
+        <td style="width: 300px;">Southern Hemisphere&nbsp; All, Land, Oceans</td>
+        <td style="width: 90px;">0&deg; &ndash; 90S&deg;&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="width: 120px;">ta, tl, to</td>
+        <td style="width: 300px;">Tropics&nbsp; All, Land, Oceans</td>
+        <td style="width: 90px;">20&deg;N &ndash; 20&deg;S&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="width: 120px;">nxa, nxl, nxo</td>
+        <td style="width: 300px;">Northern Extratropical&nbsp; All, Land, Oceans</td>
+        <td style="width: 90px;">20&deg;N &ndash; 90N&deg;&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="width: 120px;">sxa, sxl, sxo</td>
+        <td style="width: 300px;">Southern Extratropical&nbsp; All, Land, Oceans</td>
+        <td style="width: 90px;">20&deg;S &ndash; 90S&deg;&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="width: 120px;">npa, npl, npo</td>
+        <td style="width: 300px;">Northern Polar All, Land, Oceans</td>
+        <td style="width: 90px;">60&deg;N &ndash; 90N&deg;&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="width: 120px;">spa, spl, spo</td>
+        <td style="width: 300px;">Southern Polar&nbsp; All, Land, Oceans</td>
+        <td style="width: 90px;">60&deg;S &ndash; 90S&deg;&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="width: 120px;">us48, us49, aus</td>
+        <td style="width: 300px;">US Lower 48, US 48 plus Alaska, Australia?</td>
+        <td style="width: 90px;">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
