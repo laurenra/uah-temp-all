@@ -5,6 +5,7 @@ cd ..
 tar cvf uah-temp-all/uah-temp-all.tar uah-temp-all/uah-temp-all.html
 
 tar rvf uah-temp-all/uah-temp-all.tar uah-temp-all/js/uah-temp-all.js
+tar rvf uah-temp-all/uah-temp-all.tar uah-temp-all/styles/uah-temp-all.css
 
 # Don't include the large plotly javascript file. There will be one on the server.
 # tar rvf uah-temp-all/uah-temp-all.tar uah-temp-all/js/lib/plotly-latest.min.js
