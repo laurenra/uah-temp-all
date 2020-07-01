@@ -14,7 +14,7 @@
     You can size them in the plot layout,
     or give the div a size as shown here.
 -->
-<h3>UAH Global Satellite Temperature Time Series</h3>
+<h2>UAH Global Satellite Temperature Time Series</h2>
 <p>
     Satellite <a href="https://www.nsstc.uah.edu/data/msu/v6.0/tlt/uahncdc_lt_6.0.txt">data file</a> from <a href="https://www.nsstc.uah.edu/climate/">Global Temperature Report</a> of the University of Alabama Huntsville is updated monthly.
 </p>
@@ -25,11 +25,21 @@
 
 <script src="js/uah-temp-all.js"></script>
 
-<p>You can link to this page with query parameters separated by "&amp;" to show or hide specific plot lines.</p>
-<p>For example, to hide the (<i>default</i>) <strong>G</strong>lobal <strong>A</strong>verage (<strong>ga</strong>) plot and show the <strong>T</strong>ropics <strong>A</strong>ll (<strong>ta</strong>) and <strong>N</strong>orthern Hemisphere <strong>A</strong>ll (<strong>na</strong>) plots:</p>
+<p>&nbsp;</p>
+<p>Select plots from the legend on the right, click and drag over a section of the plot to zoom in, or use the options in the hover menu to zoom, reset the plot, download an image (SVG), etc.</p>
+<p><strong>NOTE:</strong> selecting different plots in the legend on the right <i>does not</i> change the link in the address. If you want to link to this page and show a specific plot, follow the instructions below.</p>
+<p>&nbsp;</p>
+<h3>How to link to this page and show specific plots</h3>
+<p>The link to this page without any parameters displays the Global Average (90&deg;N &ndash; 90&deg;S), like this:</p>
+<p><strong>http://yburbs.com/uah-temp-all/uah-temp-all.html</strong></p>
+<p>You can link to this page with query parameters separated by "&amp;" to show or hide specific plots.</p>
+<p>Query parameters always start with a "?" followed by the parameters.</p>
+<p>For example, to hide the (<i>default</i>) <strong>G</strong>lobal <strong>A</strong>verage (<strong>ga</strong>) plot and show the <strong>T</strong>ropics <strong>A</strong>ll (<strong>ta</strong>) and the <strong>N</strong>orthern Hemisphere <strong>A</strong>ll (<strong>na</strong>) plots:</p>
 <p><strong>http://yburbs.com/uah-temp-all/uah-temp-all.html?ga=0&amp;ta&amp;na</strong></p>
 <p>or</p>
 <p><strong>http://yburbs.com/uah-temp-all/uah-temp-all.html?ga=0&amp;ta=1&amp;na=1</strong></p>
+<p>&nbsp;</p>
+<h3>Query Parameters</h3>
 <table style="width: 532px; height: 394px;">
     <tbody>
     <tr>
@@ -44,43 +54,43 @@
     </tr>
     <tr>
         <td style="width: 120px;">na, nl, no</td>
-        <td style="width: 300px;">Northern Hemisphere&nbsp; All, Land, Oceans</td>
+        <td style="width: 300px;">Northern Hemisphere All, Land, Oceans</td>
         <td style="width: 90px;">0&deg; &ndash; 90N&deg;</td>
     </tr>
     <tr>
         <td style="width: 120px;">sa, sl, so</td>
-        <td style="width: 300px;">Southern Hemisphere&nbsp; All, Land, Oceans</td>
-        <td style="width: 90px;">0&deg; &ndash; 90S&deg;&nbsp;</td>
+        <td style="width: 300px;">Southern Hemisphere All, Land, Oceans</td>
+        <td style="width: 90px;">0&deg; &ndash; 90S&deg;</td>
     </tr>
     <tr>
         <td style="width: 120px;">ta, tl, to</td>
-        <td style="width: 300px;">Tropics&nbsp; All, Land, Oceans</td>
-        <td style="width: 90px;">20&deg;N &ndash; 20&deg;S&nbsp;</td>
+        <td style="width: 300px;">Tropics All, Land, Oceans</td>
+        <td style="width: 90px;">20&deg;N &ndash; 20&deg;S</td>
     </tr>
     <tr>
         <td style="width: 120px;">nxa, nxl, nxo</td>
-        <td style="width: 300px;">Northern Extratropical&nbsp; All, Land, Oceans</td>
-        <td style="width: 90px;">20&deg;N &ndash; 90N&deg;&nbsp;</td>
+        <td style="width: 300px;">Northern Extratropical All, Land, Oceans</td>
+        <td style="width: 90px;">20&deg;N &ndash; 90N&deg;</td>
     </tr>
     <tr>
         <td style="width: 120px;">sxa, sxl, sxo</td>
-        <td style="width: 300px;">Southern Extratropical&nbsp; All, Land, Oceans</td>
-        <td style="width: 90px;">20&deg;S &ndash; 90S&deg;&nbsp;</td>
+        <td style="width: 300px;">Southern Extratropical All, Land, Oceans</td>
+        <td style="width: 90px;">20&deg;S &ndash; 90S&deg;</td>
     </tr>
     <tr>
         <td style="width: 120px;">npa, npl, npo</td>
         <td style="width: 300px;">Northern Polar All, Land, Oceans</td>
-        <td style="width: 90px;">60&deg;N &ndash; 90N&deg;&nbsp;</td>
+        <td style="width: 90px;">60&deg;N &ndash; 90N&deg;</td>
     </tr>
     <tr>
         <td style="width: 120px;">spa, spl, spo</td>
-        <td style="width: 300px;">Southern Polar&nbsp; All, Land, Oceans</td>
-        <td style="width: 90px;">60&deg;S &ndash; 90S&deg;&nbsp;</td>
+        <td style="width: 300px;">Southern Polar All, Land, Oceans</td>
+        <td style="width: 90px;">60&deg;S &ndash; 90S&deg;</td>
     </tr>
     <tr>
         <td style="width: 120px;">us48, us49, aus</td>
         <td style="width: 300px;">US Lower 48, US 48 plus Alaska, Australia?</td>
-        <td style="width: 90px;">&nbsp;</td>
+        <td style="width: 90px;"></td>
     </tr>
     </tbody>
 </table>
