@@ -150,7 +150,7 @@ function uahTempTimeSeries() {
         var traceGlobal = {
             type: "scatter",
             mode: "lines",
-            name: 'Global Average',
+            name: 'Global Average (90°N–90°S)',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'Global'),
             visible: displayPlotLine('ga', true) ? true : 'legendonly',
@@ -208,7 +208,7 @@ function uahTempTimeSeries() {
         var traceNH = {
             type: "scatter",
             mode: "lines",
-            name: 'Northern Hemisphere',
+            name: 'Northern Hemisphere (0°–90°N)',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'NH'),
             // showlegend: false,
@@ -240,7 +240,7 @@ function uahTempTimeSeries() {
         var traceSH = {
             type: "scatter",
             mode: "lines",
-            name: 'Southern Hemisphere',
+            name: 'Southern Hemisphere (0°–90°S)',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'SH'),
             visible: displayPlotLine('sa', false) ? true : 'legendonly',
@@ -270,7 +270,7 @@ function uahTempTimeSeries() {
         var traceTropics = {
             type: "scatter",
             mode: "lines",
-            name: 'Tropics (20°S–20°N)',
+            name: 'Tropics (20°N–20°S)',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'Tropics'),
             visible: displayPlotLine('ta', false) ? true : 'legendonly',
@@ -281,7 +281,7 @@ function uahTempTimeSeries() {
         var traceTLand = {
             type: "scatter",
             mode: "lines",
-            name: 'Tropics Land Only (20°S–20°N)',
+            name: 'Tropics Land Only',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'TLand'),
             visible: displayPlotLine('tl', false) ? true : 'legendonly',
@@ -292,7 +292,7 @@ function uahTempTimeSeries() {
         var traceTOcean = {
             type: "scatter",
             mode: "lines",
-            name: 'Tropics Ocean Only (20°S–20°N)',
+            name: 'Tropics Ocean Only',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'TOcean'),
             visible: displayPlotLine('to', false) ? true : 'legendonly',
@@ -314,7 +314,7 @@ function uahTempTimeSeries() {
         var traceNxLand = {
             type: "scatter",
             mode: "lines",
-            name: 'NH Extratropical Land (20°N–90°N)',
+            name: 'NH Extratropical Land',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'NxLand'),
             visible: displayPlotLine('nxl', false) ? true : 'legendonly',
@@ -325,7 +325,7 @@ function uahTempTimeSeries() {
         var traceNxOcean = {
             type: "scatter",
             mode: "lines",
-            name: 'NH Extratropical Ocean (20°N–90°N)',
+            name: 'NH Extratropical Ocean',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'NxOcean'),
             visible: displayPlotLine('nxo', false) ? true : 'legendonly',
@@ -336,7 +336,7 @@ function uahTempTimeSeries() {
         var traceSExtTropic = {
             type: "scatter",
             mode: "lines",
-            name: 'SH Extratropical (90°S–20°S)',
+            name: 'SH Extratropical (20°S–90°S)',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'SExtTrpc'),
             visible: displayPlotLine('sxa', false) ? true : 'legendonly',
@@ -347,7 +347,7 @@ function uahTempTimeSeries() {
         var traceSxLand = {
             type: "scatter",
             mode: "lines",
-            name: 'SH Extratropical Land (90°S–20°S)',
+            name: 'SH Extratropical Land',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'SxLand'),
             visible: displayPlotLine('sxl', false) ? true : 'legendonly',
@@ -358,7 +358,7 @@ function uahTempTimeSeries() {
         var traceSxOcean = {
             type: "scatter",
             mode: "lines",
-            name: 'SH Extratropical Ocean (90°S–20°S)',
+            name: 'SH Extratropical Ocean',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'SxOcean'),
             visible: displayPlotLine('sxo', false) ? true : 'legendonly',
@@ -380,7 +380,7 @@ function uahTempTimeSeries() {
         var traceNpLand = {
             type: "scatter",
             mode: "lines",
-            name: 'Northern Polar Land (60°N–90°N)',
+            name: 'Northern Polar Land',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'NpLand'),
             visible: displayPlotLine('npl', false) ? true : 'legendonly',
@@ -391,7 +391,7 @@ function uahTempTimeSeries() {
         var traceNpOcean = {
             type: "scatter",
             mode: "lines",
-            name: 'Northern Polar Ocean (60°N–90°N)',
+            name: 'Northern Polar Ocean',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'NpOcean'),
             visible: displayPlotLine('npo', false) ? true : 'legendonly',
@@ -402,7 +402,7 @@ function uahTempTimeSeries() {
         var traceSoPolar = {
             type: "scatter",
             mode: "lines",
-            name: 'Southern Polar (90°S–60°S)',
+            name: 'Southern Polar (60°S–90°S)',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'SoPolar'),
             visible: displayPlotLine('spa', false) ? true : 'legendonly',
@@ -413,7 +413,7 @@ function uahTempTimeSeries() {
         var traceSpLand = {
             type: "scatter",
             mode: "lines",
-            name: 'Southern Polar Land (90°S–60°S)',
+            name: 'Southern Polar Land',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'SpLand'),
             visible: displayPlotLine('spl', false) ? true : 'legendonly',
@@ -424,7 +424,7 @@ function uahTempTimeSeries() {
         var traceSpOcean = {
             type: "scatter",
             mode: "lines",
-            name: 'Southern Polar Ocean (90°S–60°S)',
+            name: 'Southern Polar Ocean',
             x: unpack(rows, 'Date'),
             y: unpack(rows, 'SpOcean'),
             visible: displayPlotLine('spo', false) ? true : 'legendonly',
