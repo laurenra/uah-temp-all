@@ -56,6 +56,7 @@ moveme <- function (invec, movecommand) {
 # 6. move Date to first column, requires moveme() function to be loaded, see below
 # 7. save as CSV
 # TODO: drop Year and Mo columns, move Date to 1st column, rename headers
+install.packages("RCurl")
 library("RCurl")
 uah.raw <- getURL("https://www.nsstc.uah.edu/data/msu/v6.0/tlt/uahncdc_lt_6.0.txt")
 uah.data <- substr(uah.raw, 1, regexpr("\n Year", uah.raw))
@@ -79,4 +80,6 @@ uah.monthly = subset(uah.monthly, select = -c(Year,Month))
 uah.rearranged.columns <- moveme(names(uah.monthly), "Date first")
 uah.monthly <- uah.monthly[, uah.rearranged.columns]
 rm(uah.rearranged.columns)
-write.csv(uah.monthly, file = "~/Development/R/uah-monthly-all.csv", row.names = FALSE)
+# write.csv(uah.monthly, file = "~/Development/R/uah-monthly-all.csv", row.names = FALSE)
+write.csv(uah.monthly, file = "~/Dev/Node/plotly-practice-1/uah-monthly-all.csv", row.names = FALSE)
+
