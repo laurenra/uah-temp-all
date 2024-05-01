@@ -82,9 +82,9 @@ Example: http://localhost:8000/practice-1.html?ga=0&ta&na
 - us48, us49, aus = US lower 48, US 48 + Alaska, Australia?
 
 ## Update the data source .csv files with R scripts
-The **noaa_battery_park_ny_meantrend-dates.csv** and **uah-monthly-all.csv**
-used by the Plotly Javascript library to generate plots pull data from the NOAA
-and UAH websites. To get the latest data, use the .R scripts in the /r directory.
+The **uah-monthly-all.csv** used by the Plotly Javascript library to generate 
+plots pulls data from the UAH website. To get the latest data, use the .R scripts 
+in the /r directory.
 
 1. Install R from https://cran.rstudio.com/
 2. Install RStudio from https://posit.co/download/rstudio-desktop/
